@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Peso:
+  = @avaliacao.peso
+%p
+  %b Altura:
+  = @avaliacao.altura
+%p
+  %b Percentual de Gordura:
+  = @avaliacao.percentualGordura
+%p
+  %b Imc:
+  = @avaliacao.imc
+%p
+  %b Cliente:
+  = @avaliacao.cliente.nome
+
+= link_to 'Edit', edit_avaliacao_path(@avaliacao)
+\|
+= link_to 'Back', avaliacoes_path

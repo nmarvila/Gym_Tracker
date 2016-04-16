@@ -1,0 +1,29 @@
+%h1 Listing avaliacoes
+
+%table
+  %thead
+    %tr
+      %th Peso
+      %th Altura
+      %th Percentual de Gordura
+      %th Imc
+      %th Cliente
+      %th
+      %th
+      %th
+
+  %tbody
+    - @avaliacoes.each do |avaliacao|
+      %tr
+        %td= avaliacao.peso
+        %td= avaliacao.altura
+        %td= avaliacao.percentualGordura
+        %td= avaliacao.imc
+        %td= avaliacao.cliente.nome
+        %td= link_to 'Show', avaliacao
+        %td= link_to 'Edit', edit_avaliacao_path(avaliacao)
+        %td= link_to 'Excluir', avaliacao, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Avaliacao', new_avaliacao_path

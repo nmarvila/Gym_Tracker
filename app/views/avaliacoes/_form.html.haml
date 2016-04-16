@@ -1,0 +1,12 @@
+= simple_form_for(@avaliacao) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :peso
+    = f.input :altura
+    = f.input :percentualGordura, label: "Percentual de Gordura"
+    = f.input :imc
+    = f.association :cliente, label_method: :nome
+
+  .form-actions
+    = f.submit "Salvar"
