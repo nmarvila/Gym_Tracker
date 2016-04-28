@@ -1,0 +1,9 @@
+= simple_form_for(@exercicio_serie) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.association :serie, label: "Série", label_method: :nome
+    = f.association :exercicio, label: "Exercício", label_method: :nome
+
+  .form-actions
+    = f.submit "Salvar"

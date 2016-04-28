@@ -1,0 +1,23 @@
+%h1 Listing exercicio_series
+
+%table
+  %thead
+    %tr
+      %th Série
+      %th Exercício
+      %th
+      %th
+      %th
+
+  %tbody
+    - @exercicio_series.each do |exercicio_serie|
+      %tr
+        %td= exercicio_serie.serie.nome
+        %td= exercicio_serie.exercicio.nome
+        %td= link_to 'Show', exercicio_serie
+        %td= link_to 'Edit', edit_exercicio_serie_path(exercicio_serie)
+        %td= link_to 'Excluir', exercicio_serie, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Exercicio serie', new_exercicio_serie_path

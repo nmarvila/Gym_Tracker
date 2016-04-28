@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Série:
+  = @exercicio_serie.serie.nome
+%p
+  %b Exercício:
+  = @exercicio_serie.exercicio.nome
+
+= link_to 'Edit', edit_exercicio_serie_path(@exercicio_serie)
+\|
+= link_to 'Back', exercicio_series_path
