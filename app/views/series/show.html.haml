@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Nome:
+  = @serie.nome
+%p
+  %b Duração:
+  = @serie.duracao
+%p
+  %b Cliente:
+  = @serie.cliente.nome
+
+= link_to 'Edit', edit_serie_path(@serie)
+\|
+= link_to 'Back', series_path

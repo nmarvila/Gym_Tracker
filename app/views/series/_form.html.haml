@@ -1,0 +1,10 @@
+= simple_form_for(@serie) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :nome
+    = f.input :duracao, label: "Duração"
+    = f.association :cliente, label_method: :nome
+
+  .form-actions
+    = f.submit "Salvar"
