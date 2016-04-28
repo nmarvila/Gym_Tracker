@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Nome:
+  = @exercicio.nome
+
+= link_to 'Edit', edit_exercicio_path(@exercicio)
+\|
+= link_to 'Back', exercicios_path

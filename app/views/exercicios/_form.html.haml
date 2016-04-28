@@ -1,0 +1,8 @@
+= simple_form_for(@exercicio) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :nome
+
+  .form-actions
+    = f.submit "Salvar"
