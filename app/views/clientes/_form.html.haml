@@ -3,7 +3,7 @@
 
   .form-inputs
     = f.input :nome
-    = f.input :dataNascimento, label: "Data de Nascimento"
+    = f.input :dataNascimento, start_year: Date.today.year - 120, end_year: Date.today.year, add_month_numbers: true, order: [:day, :month, :year], label: "Data de Nascimento"
     = f.input :rg
     = f.input :cpf
     = f.input :telefone
