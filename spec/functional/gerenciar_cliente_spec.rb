@@ -33,6 +33,8 @@ feature 'gerenciar Cliente' do
         fill_in 'Rg', :with => "23456789-9"
         fill_in 'Cpf', :with => "123456789-00"
         fill_in 'Telefone', :with => "22999999999"
+        fill_in 'Login', :with => "nichollas"
+        fill_in 'Senha', :with => "123456"
 
         click_button 'Salvar'
 
