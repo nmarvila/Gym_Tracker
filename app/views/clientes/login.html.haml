@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Nome:
+  = @cliente.nome
+%p
+  %b Data de Nascimento:
+  = @cliente.dataNascimento
+%p
+  %b Rg:
+  = @cliente.rg
+%p
+  %b Cpf:
+  = @cliente.cpf
+%p
+  %b Telefone:
+  = @cliente.telefone
+
+= link_to 'Edit', edit_cliente_path(@cliente)
+\|
+= link_to 'Back', clientes_path
