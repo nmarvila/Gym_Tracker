@@ -1,4 +1,4 @@
-%h1 Listing exercicios
+%h1 Listagem de Exercícios
 
 %table
   %thead
@@ -12,10 +12,10 @@
     - @exercicios.each do |exercicio|
       %tr
         %td= exercicio.nome
-        %td= link_to 'Show', exercicio
-        %td= link_to 'Edit', edit_exercicio_path(exercicio)
-        %td= link_to 'Excluir', exercicio, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Visualizar', exercicio
+        %td= link_to 'Editar', edit_exercicio_path(exercicio)
+        %td= link_to 'Excluir', exercicio, :method => :delete, :data => { :confirm => 'Você tem certeza?' }
 
 %br
 
-= link_to 'New Exercicio', new_exercicio_path
+= link_to 'Cadastrar Exercício', new_exercicio_path

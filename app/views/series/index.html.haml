@@ -1,4 +1,4 @@
-%h1 Listing series
+%h1 Listagem de Séries
 
 %table
   %thead
@@ -16,10 +16,10 @@
         %td= serie.nome
         %td= serie.duracao
         %td= serie.cliente.nome
-        %td= link_to 'Show', serie
-        %td= link_to 'Edit', edit_serie_path(serie)
-        %td= link_to 'Excluir', serie, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Visualizar', serie
+        %td= link_to 'Editar', edit_serie_path(serie)
+        %td= link_to 'Excluir', serie, :method => :delete, :data => { :confirm => 'Você tem certeza?' }
 
 %br
 
-= link_to 'New Serie', new_serie_path
+= link_to 'Cadastrar Série', new_serie_path

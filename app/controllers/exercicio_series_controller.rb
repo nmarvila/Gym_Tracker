@@ -28,7 +28,7 @@ class ExercicioSeriesController < ApplicationController
 
     respond_to do |format|
       if @exercicio_serie.save
-        format.html { redirect_to @exercicio_serie, notice: 'Exercicio serie was successfully created.' }
+        format.html { redirect_to @exercicio_serie, notice: 'O Exercício da Série foi criado com sucesso.' }
         format.json { render :show, status: :created, location: @exercicio_serie }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ExercicioSeriesController < ApplicationController
   def update
     respond_to do |format|
       if @exercicio_serie.update(exercicio_serie_params)
-        format.html { redirect_to @exercicio_serie, notice: 'Exercicio serie was successfully updated.' }
+        format.html { redirect_to @exercicio_serie, notice: 'O Exercício da Série foi atualizado com sucesso.' }
         format.json { render :show, status: :ok, location: @exercicio_serie }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ExercicioSeriesController < ApplicationController
   def destroy
     @exercicio_serie.destroy
     respond_to do |format|
-      format.html { redirect_to exercicio_series_url, notice: 'Exercicio serie was successfully destroyed.' }
+      format.html { redirect_to exercicio_series_url, notice: 'O Exercício da Série foi destruído com sucesso.' }
       format.json { head :no_content }
     end
   end

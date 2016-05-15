@@ -1,13 +1,13 @@
 body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  background-color: #3668ab;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
   font-size: 13px;
   line-height: 18px;
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 13px;
   line-height: 18px;
 }
@@ -19,15 +19,14 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #fff;
 
   &:visited {
-    color: #666;
+    color: #000;
   }
 
   &:hover {
     color: #fff;
-    background-color: #000;
   }
 }
 

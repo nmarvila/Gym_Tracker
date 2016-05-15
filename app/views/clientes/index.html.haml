@@ -1,4 +1,4 @@
-%h1 Listing clientes
+%h1 Listagem de Clientes
 
 %table
   %thead
@@ -20,10 +20,10 @@
         %td= cliente.rg
         %td= cliente.cpf
         %td= cliente.telefone
-        %td= link_to 'Show', cliente
-        %td= link_to 'Edit', edit_cliente_path(cliente)
-        %td= link_to 'Excluir', cliente, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Visualizar', cliente
+        %td= link_to 'Editar', edit_cliente_path(cliente)
+        %td= link_to 'Excluir', cliente, :method => :delete, :data => { :confirm => 'Você tem certeza?' }
 
 %br
 
-= link_to 'New Cliente', new_cliente_path
+= link_to 'Cadastrar Cliente', new_cliente_path

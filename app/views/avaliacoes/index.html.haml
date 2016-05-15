@@ -1,4 +1,4 @@
-%h1 Listing avaliacoes
+%h1 Listagem de Avaliações
 
 %table
   %thead
@@ -20,10 +20,10 @@
         %td= avaliacao.percentualGordura
         %td= avaliacao.imc
         %td= avaliacao.cliente.nome
-        %td= link_to 'Show', avaliacao
-        %td= link_to 'Edit', edit_avaliacao_path(avaliacao)
-        %td= link_to 'Excluir', avaliacao, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Visualizar', avaliacao
+        %td= link_to 'Editar', edit_avaliacao_path(avaliacao)
+        %td= link_to 'Excluir', avaliacao, :method => :delete, :data => { :confirm => 'Você tem certeza?' }
 
 %br
 
-= link_to 'New Avaliacao', new_avaliacao_path
+= link_to 'Cadastrar Avaliação', new_avaliacao_path

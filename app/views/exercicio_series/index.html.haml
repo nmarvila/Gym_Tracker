@@ -1,4 +1,4 @@
-%h1 Listing exercicio_series
+%h1 Listagem de Exercícios das Séries
 
 %table
   %thead
@@ -14,10 +14,10 @@
       %tr
         %td= exercicio_serie.serie.nome
         %td= exercicio_serie.exercicio.nome
-        %td= link_to 'Show', exercicio_serie
-        %td= link_to 'Edit', edit_exercicio_serie_path(exercicio_serie)
-        %td= link_to 'Excluir', exercicio_serie, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Visualizar', exercicio_serie
+        %td= link_to 'Editar', edit_exercicio_serie_path(exercicio_serie)
+        %td= link_to 'Excluir', exercicio_serie, :method => :delete, :data => { :confirm => 'Você tem certeza?' }
 
 %br
 
-= link_to 'New Exercicio serie', new_exercicio_serie_path
+= link_to 'Cadastrar Exercício na Série', new_exercicio_serie_path

@@ -28,7 +28,7 @@ class AvaliacoesController < ApplicationController
 
     respond_to do |format|
       if @avaliacao.save
-        format.html { redirect_to @avaliacao, notice: 'Avaliacao was successfully created.' }
+        format.html { redirect_to @avaliacao, notice: 'A Avaliação foi criada com sucesso.' }
         format.json { render :show, status: :created, location: @avaliacao }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class AvaliacoesController < ApplicationController
   def update
     respond_to do |format|
       if @avaliacao.update(avaliacao_params)
-        format.html { redirect_to @avaliacao, notice: 'Avaliacao was successfully updated.' }
+        format.html { redirect_to @avaliacao, notice: 'A Avaliação foi atualizada com sucesso.' }
         format.json { render :show, status: :ok, location: @avaliacao }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class AvaliacoesController < ApplicationController
   def destroy
     @avaliacao.destroy
     respond_to do |format|
-      format.html { redirect_to avaliacoes_url, notice: 'Avaliacao was successfully destroyed.' }
+      format.html { redirect_to avaliacoes_url, notice: 'A Avaliação foi destruída com sucesso.' }
       format.json { head :no_content }
     end
   end
